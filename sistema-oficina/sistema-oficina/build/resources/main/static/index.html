@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Oficina Mecânica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Oficina AutoTech — Painel de Gestão</h1>
+    <nav id="menu-entidades">
+        <button data-entity="clientes" class="active">Clientes</button>
+        <button data-entity="veiculos">Veículos</button>
+        <button data-entity="mecanicos">Mecânicos</button>
+        <button data-entity="servicos">Serviços</button>
+        <button data-entity="ordens-servico">Ordens de Serviço</button>
+    </nav>
+</header>
+
+<main>
+    <div id="feedback" class="feedback hidden"></div>
+
+    <section class="card">
+        <h2 id="form-titulo">Cadastrar Registro</h2>
+        <form id="registro-form">
+            <input type="hidden" id="registro-id">
+            <div id="campos-dinamicos"></div>
+            <div class="acoes-form">
+                <button type="submit" id="btn-salvar">Salvar</button>
+                <button type="button" id="btn-cancelar" class="hidden">Cancelar Edição</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2 id="lista-titulo">Registros Cadastrados</h2>
+        <div id="loading" class="estado hidden">Carregando dados...</div>
+        <div id="lista-vazia" class="estado hidden">Nenhum registro encontrado.</div>
+        <div class="tabela-wrapper">
+            <table id="tabela-dados">
+                <thead id="tabela-head"></thead>
+                <tbody id="tabela-body"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

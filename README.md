@@ -33,5 +33,5 @@ Aplicação web full-stack integrada a uma API REST desenvolvida em Java com Spr
 ### Instalação
 1. Clone este repositório:
    ```bash
-   git clone <URL_DO_SEU_REPOSITORIO_GIT>
+   git clone <(https://github.com/thiago-p23/API-Rest/tree/main)>
    cd sistema-oficina
